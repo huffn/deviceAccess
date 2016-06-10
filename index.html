@@ -24,8 +24,396 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h1>HTML - Apprentice</h1>
+					<h3>Skills Workshop v2</h3>
+				</section>
+				<section>
+					<h2>Goal</h2>
+					<blockquote>
+						To demonstrate a foundational understanding and skill in modern HTML elements and APIs.
+					</blockquote>
+				</section>
+				<section>
+					<h2>Semantic HTML5 Elements</h2>
+					<ul>
+						<li>Demonstrate basic foundations in Semantic HTML5 Elements</li>
+						<li>Be aware of, and use several often-used semantic elements</li>
+					</ul>
+				</section>
+				<section>
+					<blockquote cite="http://www.html5rocks.com/en/features/semantics">
+						&ldquo;The Web is text and text has a meaning. Ultimately the content that our browsers read is pure text &hellip; In the open web scenario our content can be shown, fed and remixed by third parties, search engines and accessibility tools.&rdquo; – <a href="http://www.html5rocks.com/en/features/semantics">HTML5 Rocks</a>
+						</blockquote>
+				</section>
+				<section>
+					<section>
+						<h2>New HTML5 Elements</h2>
+					</section>
+					<section>
+						<h3>&lt;article&gt;</h3>
+						<pre><code class="html" data-trim contenteditable>
+<article>
+	<h1>HTML Article</h1>
+	<p>A section of the page which can be independently distributed.</p>
+</article>
+					</code></pre>
+					</section>
+					<section>
+						<h3>&lt;aside&gt;</h3>
+						<p>Used to display tangentially related information that is separate from your content.</p>
+						<p>&nbsp;</p>
+						<aside class="fragment">
+							<h4>Did you know?</h4>
+							In English, four is the only digit that has the same number of letters as its value.
+							</aside>
+					</section>
+					<section>
+						<h3>&lt;audio&gt;</h3>
+						<audio controls="controls">
+							Your browser does not support the &gt;audio&lt; element.
+							<source src="./mp3/justDoIt.mp3" type="audio/mp3">
+						</audio>
+						<pre><code class="html" data-trim contenteditable>
+<audio controls="controls">
+	<source src="./mp3/justDoIt.mp3" type="audio/mp3">
+</audio>
+					</code></pre>
+					</section>
+					<section>
+						<h3>&lt;details&gt;</h3>
+						<details>
+							<summary>Click here for more details</summary>
+							<p>Additional information can be placed here!</p>
+						</details>
+						<pre><code class="html" data-trim contenteditable>
+<details>
+	<summary>Click here for more details</summary>
+	<p>Additional information can be placed here!</p>
+</details>
+					</code></pre>
+					</section>
+					<section>
+						<h3>&lt;figure&gt;</h3>
+						<figure>
+							<img src="./img/angry_unicorn.png">
+							<figcaption>Fig1. The mythical Github unicorn.</figcaption>
+						</figure>
+						<pre><code class="html" data-trim contenteditable>
+<figure>
+	<img src="./img/angry_unicorn.png">
+	<figcaption>Fig1. The mythical Github unicorn.</figcaption>
+</figure>
+					</code></pre>
+					</section>
+					<section>
+						<h3>&lt;footer&gt;</h3>
+						<footer style="position: absolute; bottom: -500%">
+							Can be used as a footer for this element's container.
+						</footer>
+					</section>
+					<section>
+						<header style="position: absolute; top: -250%;">
+							Can be used to contain introductory content and navigation.
+							</header>
+							<h3>&lt;header&gt;</h3>
+					</section>
+					<section>
+						<hgroup>
+							<h3>&lt;hgroup&gt;</h3>
+							<h4>Grouping heading elements to make titles</h4>
+						</hgroup>
+					</section>
+					<section>
+						<h3>&lt;mark&gt;</h3>
+						<p>Now we can <mark>highlight</mark> important text</p>
+						<pre><code class="html" data-trim contenteditable>
+<p>Now we can <mark>highlight</mark> important text</p>
+					</code></pre>
+					</section>
+					<section>
+						<h3>&lt;meter&gt;</h3>
+						<p>An element used to display a number bound between two values</p>
+						<meter low="51" max="100" value="52">52</meter>
+						<meter low="69" high="74" max="100" value="75">75</meter>
+						<meter max="100" value="100">100</meter>
+						<pre><code class="html" data-trim contenteditable>
+<meter low="51" max="100" value="52">52</meter>
+<meter low="69" high="74" max="100" value="75">75</meter>
+<meter max="100" value="100">100</meter>
+					</code></pre>
+					</section>
+					<section>
+						<h3>&lt;nav&gt;</h3>
+						<nav style="display:flex;">
+							<a style="flex:1;" href="#/4/11">A</a> 
+							<a style="flex:1;" href="#/4/11">logical</a> 
+							<a style="flex:1;" href="#/4/11">location</a> 
+							<a style="flex:1;" href="#/4/11">for</a> 
+							<a style="flex:1;" href="#/4/11">navigation</a>
+						</nav>
+					</section>
+					<section>
+						<h3>&lt;output&gt;</h3>
+						<p>A read-only form element that can be used to show calculated data</p> 
+						<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+							<input type="range" name="a" value="10" max="20" /> +
+							<input type="number" name="b" value="10" /> =
+							<output name="result">20</output>
+						</form>
+						<pre><code class="html" data-trim contenteditable>
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+	<input type="range" name="a" value="10" max="20" /> +
+	<input type="number" name="b" value="10" /> =
+	<output name="result">20</output>
+</form>
+					</code></pre>
+					</section>
+					<section>
+						<h3>&lt;progress&gt;</h3>
+						<p>Can be used to show the completion progress of a task.</p>
+						<progress value="70" max="100">70%</progress>
+						<pre><code class="html" data-trim contenteditable>
+<progress value="70" max="100">70%</progress>
+					</code></pre>
+					</section>
+					<section>
+						<h3>&lt;section&gt;</h3>
+						<p>A generic section of a document.</p>
+						<p>Each slide in this slideshow is made up of section elements</p>
+					</section>
+					<section>
+						<h3>&lt;video&gt;</h3>
+						<video width="480" controls>
+							<source src="./video/nyanCat.m4v" type="video/m4v">
+							<source src="./video/nyanCat.ogg" type="video/ogg">
+							Your browser doesn't support HTML5 video tag.
+						</video>
+						<pre><code class="html" data-trim contenteditable>
+<video width="480" controls>
+	<source src="./video/nyanCat.m4v" type="video/m4v">
+	<source src="./video/nyanCat.ogg" type="video/ogg">
+	Your browser doesn't support HTML5 video tag.
+</video>
+					</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Picture Element</h2>
+					</section>
+					<section>
+						<h3>&lt;picture&gt;</h3>
+						<pre><code class="html" data-trim contenteditable>
+<picture>
+ <source srcset="mdn-logo-wide.png" media="(min-width: 600px)">
+ <img src="mdn-logo-narrow.png" alt="MDN">
+</picture>
+					</code></pre>
+					<p>This example from MDN uses built in media selectors to show a larger picture if the patron's display is big enough. Otherwise it defaults to the smaller picture.</p>
+					</section>
+					<section>
+						<h3>Cat Demo</h3>
+						<a href="https://googlechrome.github.io/samples/picture-element/" target="_blank">Click Here</a>
+					</section>
+					<section>
+						<h3>Cat Demo Source</h3>
+						<pre><code class="html" data-trim contenteditable>
+<picture>
+	<source media="(min-width: 650px)" srcset="images/kitten-large.png">
+	<source media="(min-width: 465px)" srcset="images/kitten-medium.png">
+	<!-- img tag for browsers that do not support picture element -->
+	<img src="images/kitten-small.png" alt="a cute kitten">
+</picture>
+					</code></pre>
+					</section>
+					<section>
+						<h3>Pixel Density</h3>
+						<p>Both img and picture elements support the srcset attribute to take advantage of nicer displays.</p>
+						<pre><code class="html" data-trim contenteditable>
+<picture>
+	<source 
+		media="(min-width: 650px)"
+		srcset="images/kitten-stretching.png,
+						images/kitten-stretching@1.5x.png 1.5x,
+						images/kitten-stretching@2x.png 2x">
+	<img 
+		src="images/kitten-curled.png"
+		srcset="images/kitten-curled@1.5x.png 1.5x,
+						images/kitten-curled@2x.png 2x" 
+		alt="a cute kitten">
+</picture>
+					</code></pre>
+					</section>
+					<section>
+						<h3>WebP format</h3>
+						<p>Just like videos, when multiple sources are listed, the browser will fallback when it can't show the file format.</p>
+						<pre><code class="html" data-trim contenteditable>
+<picture>
+	<source type="image/webp" srcset="images/kitten-optimized.webp">
+	<!-- img tag for browsers that do not support picture element -->
+	<img src="images/kitten-fat.png" alt="a fat kitten">
+</picture>
+					</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>SVG</h2>
+					</section>
+					<section>
+						<h3>Including an SVG</h3>
+						<img src="./img/svg.svg">
+						<pre><code class="html" data-trim contenteditable>
+<img src="./img/svg.svg">
+					</code></pre>
+					</section>
+					<section>
+						<h3>Using a Data URI</h3>
+						<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQ0IiBoZWlnaHQ9IjIxMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDx0aXRsZT5iYWNrZ3JvdW5kPC90aXRsZT4KICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0tMS0xaDI0NnYyMTNILTF6Ii8+CiAgICA8dGl0bGU+TGF5ZXIgMTwvdGl0bGU+CiAgICA8ZyBzdHJva2U9IiMwMDAiIGZvbnQtc2l6ZT0iMjQiIHN0cm9rZS13aWR0aD0iMCI+CiAgICAgICAgPHRleHQgdHJhbnNmb3JtPSJyb3RhdGUoMTYuNzk1IDI1NTMuNjkgLTE3NTAuNzkyKSBzY2FsZSg3LjU2MjUpIiBmb250LWZhbWlseT0iJ1BhbGF0aW5vIExpbm90eXBlJywgJ0Jvb2sgQW50aXF1YScsIFBhbGF0aW5vLCBzZXJpZiIgeT0iMTAzLjI2NDQ2MyIgeD0iODguMTY5NDIxIiBmaWxsPSIjZmYwNTA1Ij5TPC90ZXh0PgogICAgICAgIDx0ZXh0IHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yODc2LjEyNyAtODkzLjc5NCkgc2NhbGUoNi43NjY3KSIgZm9udC1mYW1pbHk9IidDb3VyaWVyIE5ldycsIENvdXJpZXIsIG1vbm9zcGFjZSIgeT0iMTU0Ljg0MDk0MSIgeD0iNDQ1LjE0MTM3OSIgZmlsbD0iIzAwMDBiZiI+RzwvdGV4dD4KICAgICAgICA8dGV4dCBmb250LXdlaWdodD0iYm9sZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTkzNS42NTYgLTExMjAuODEzKSBzY2FsZSg1LjkzNzUpIiBmb250LWZhbWlseT0iJ1RpbWVzIE5ldyBSb21hbicsIFRpbWVzLCBzZXJpZiIgeT0iMjIxLjM3ODk0NyIgeD0iMTY5LjYyNjMxNiIgZmlsbD0iIzAwYmY1ZiI+VjwvdGV4dD4KICAgIDwvZz4KPC9zdmc+">
+					<pre><code class="html" data-trim contenteditable>
+<img src="data:image/svg+xml;base64,[BASE64_ENCODED_STRING]">
+					</code></pre>
+					</section>
+					<section>
+						<h3>Using CSS to load an SVG</h3>
+						<style>
+							.loadImage {
+								display: inline-block;
+								width: 244px;
+								height: 211px;
+								background: url(./img/svg.svg);
+								background-size: 244px 211px;
+							}
+							.loadImageURI {
+								display: inline-block;
+								width: 244px;
+								height: 211px;
+								background-size: 244px 211px;
+								background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQ0IiBoZWlnaHQ9IjIxMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDx0aXRsZT5iYWNrZ3JvdW5kPC90aXRsZT4KICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0tMS0xaDI0NnYyMTNILTF6Ii8+CiAgICA8dGl0bGU+TGF5ZXIgMTwvdGl0bGU+CiAgICA8ZyBzdHJva2U9IiMwMDAiIGZvbnQtc2l6ZT0iMjQiIHN0cm9rZS13aWR0aD0iMCI+CiAgICAgICAgPHRleHQgdHJhbnNmb3JtPSJyb3RhdGUoMTYuNzk1IDI1NTMuNjkgLTE3NTAuNzkyKSBzY2FsZSg3LjU2MjUpIiBmb250LWZhbWlseT0iJ1BhbGF0aW5vIExpbm90eXBlJywgJ0Jvb2sgQW50aXF1YScsIFBhbGF0aW5vLCBzZXJpZiIgeT0iMTAzLjI2NDQ2MyIgeD0iODguMTY5NDIxIiBmaWxsPSIjZmYwNTA1Ij5TPC90ZXh0PgogICAgICAgIDx0ZXh0IHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yODc2LjEyNyAtODkzLjc5NCkgc2NhbGUoNi43NjY3KSIgZm9udC1mYW1pbHk9IidDb3VyaWVyIE5ldycsIENvdXJpZXIsIG1vbm9zcGFjZSIgeT0iMTU0Ljg0MDk0MSIgeD0iNDQ1LjE0MTM3OSIgZmlsbD0iIzAwMDBiZiI+RzwvdGV4dD4KICAgICAgICA8dGV4dCBmb250LXdlaWdodD0iYm9sZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTkzNS42NTYgLTExMjAuODEzKSBzY2FsZSg1LjkzNzUpIiBmb250LWZhbWlseT0iJ1RpbWVzIE5ldyBSb21hbicsIFRpbWVzLCBzZXJpZiIgeT0iMjIxLjM3ODk0NyIgeD0iMTY5LjYyNjMxNiIgZmlsbD0iIzAwYmY1ZiI+VjwvdGV4dD4KICAgIDwvZz4KPC9zdmc+");
+							}
+						</style>
+						<div class="loadImage"></div>
+						<div class="loadImageURI"></div>
+						<pre><code class="css" data-trim contenteditable>
+.loadImage {
+	display: inline-block;
+	width: 244px;
+	height: 211px;
+	background: url(./img/svg.svg);
+	background-size: 244px 211px;
+}
+.loadImageURI {
+	background: url("data:image/svg+xml;base64,[BASE64_ENCODED_STRING]")
+}							
+					</code></pre>
+					</section>
+					<section>
+						<h3>Using an inline SVG</h3>
+						<svg width="244" height="211" xmlns="http://www.w3.org/2000/svg">
+							<title>background</title>
+							<path fill="#fff" d="M-1-1h246v213H-1z"/>
+							<title>Layer 1</title>
+							<g stroke="#000" font-size="24" stroke-width="0">
+								<text transform="rotate(16.795 2553.69 -1750.792) scale(7.5625)" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" y="103.264463" x="88.169421" fill="#ff0505">S</text>
+								<text transform="translate(-2876.127 -893.794) scale(6.7667)" font-family="'Courier New', Courier, monospace" y="154.840941" x="445.141379" fill="#0000bf">G</text>
+								<text font-weight="bold" transform="translate(-935.656 -1120.813) scale(5.9375)" font-family="'Times New Roman', Times, serif" y="221.378947" x="169.626316" fill="#00bf5f">V</text>
+							</g>
+						</svg>
+						<pre><code class="html" data-trim contenteditable>
+<svg>
+	...
+</svg>
+					</code></pre>
+					</section>
+					<section>
+						<h3>Optimizing SVGs</h3>
+						<p>I use <a href="https://jakearchibald.github.io/svgomg/">svgomg</a> to optimize my SVGs.</p>
+						<p>It compressed my file 34.96% and removed the extra data saved in my svg.</p>
+					</section>
+					<section>
+						<style>
+							#svgImage:hover #svgS {
+								fill: #0000bf;
+							}
+							#svgImage:hover #svgV {
+								fill: #ff0505;
+							}
+							#svgImage:hover #svgG {
+								fill: #00bf5f;
+							}
+						</style>
+						<h3>Styling with CSS</h3>
+						<svg id="svgImage" width="244" height="211" xmlns="http://www.w3.org/2000/svg">
+							<path fill="#fff" d="M-1-1h246v213H-1z"/>
+							<g stroke="#000" font-size="24" stroke-width="0">
+								<text id="svgS" transform="rotate(16.795 2553.69 -1750.792) scale(7.5625)" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" y="103.264463" x="88.169421" fill="#ff0505">S</text>
+								<text id="svgG" transform="translate(-2876.127 -893.794) scale(6.7667)" font-family="'Courier New', Courier, monospace" y="154.840941" x="445.141379" fill="#0000bf">G</text>
+								<text id="svgV" font-weight="bold" transform="translate(-935.656 -1120.813) scale(5.9375)" font-family="'Times New Roman', Times, serif" y="221.378947" x="169.626316" fill="#00bf5f">V</text>
+							</g>
+						</svg>
+						<pre><code class="css" data-trim contenteditable>
+<style>
+	#svgImage:hover #svgS {
+		fill: #0000bf;
+	}
+	#svgImage:hover #svgV {
+		fill: #ff0505;
+	}
+	#svgImage:hover #svgG {
+		fill: #00bf5f;
+	}
+</style>
+					</code></pre>
+					</section>
+					<section>
+						<style>
+							#svgImage2:hover #svg2S {
+								fill: #0000bf;
+							}
+							#svgImage2:hover #svg2V {
+								fill: #ff0505;
+							}
+							#svgImage2:hover #svg2G {
+								fill: #00bf5f;
+							}
+							#svg2S:hover, #svg2V:hover, #svg2G:hover {
+								filter: url(#pictureFilter2);
+							}
+						</style>
+						<h3>Filters</h3>
+						<svg id="svgImage2" width="244" height="211" xmlns="http://www.w3.org/2000/svg">
+							<path fill="#fff" d="M-1-1h246v213H-1z"/>
+							<g stroke="#000" font-size="24" stroke-width="0">
+								<text id="svg2S" transform="rotate(16.795 2553.69 -1750.792) scale(7.5625)" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" y="103.264463" x="88.169421" fill="#ff0505">S</text>
+								<text id="svg2G" transform="translate(-2876.127 -893.794) scale(6.7667)" font-family="'Courier New', Courier, monospace" y="154.840941" x="445.141379" fill="#0000bf">G</text>
+								<text id="svg2V" font-weight="bold" transform="translate(-935.656 -1120.813) scale(5.9375)" font-family="'Times New Roman', Times, serif" y="221.378947" x="169.626316" fill="#00bf5f">V</text>
+							</g>
+							<filter id="pictureFilter2" >
+								<feGaussianBlur stdDeviation="1" />
+							</filter>
+						</svg>
+						<pre><code class="css" data-trim contenteditable>
+<svg>
+	...
+	<filter id="pictureFilter" >
+		<feGaussianBlur stdDeviation="1" />
+	</filter>
+</svg>
+<style>
+	...
+	#svg2S:hover, #svg2V:hover, #svg2G:hover {
+		filter: url(#pictureFilter);
+	}
+</style>
+					</code></pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Device Access</h2>
+					</section>
+				</section>
 			</div>
 		</div>
 
@@ -42,7 +430,7 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); hljs.configure({tabReplace: '  '}) } }
 				]
 			});
 		</script>

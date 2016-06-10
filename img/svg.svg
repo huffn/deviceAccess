@@ -1,0 +1,10 @@
+<svg width="244" height="211" xmlns="http://www.w3.org/2000/svg">
+    <title>background</title>
+    <path fill="#fff" d="M-1-1h246v213H-1z"/>
+    <title>Layer 1</title>
+    <g stroke="#000" font-size="24" stroke-width="0">
+        <text transform="rotate(16.795 2553.69 -1750.792) scale(7.5625)" font-family="'Palatino Linotype', 'Book Antiqua', Palatino, serif" y="103.264463" x="88.169421" fill="#ff0505">S</text>
+        <text transform="translate(-2876.127 -893.794) scale(6.7667)" font-family="'Courier New', Courier, monospace" y="154.840941" x="445.141379" fill="#0000bf">G</text>
+        <text font-weight="bold" transform="translate(-935.656 -1120.813) scale(5.9375)" font-family="'Times New Roman', Times, serif" y="221.378947" x="169.626316" fill="#00bf5f">V</text>
+    </g>
+</svg>
